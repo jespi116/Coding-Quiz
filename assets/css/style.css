@@ -9,6 +9,11 @@ header {
     padding: 20px;
     flex-wrap: nowrap;
 }
+
+.time{
+    display: flex;
+}
+
 .hs a {
     text-decoration: none;
     color: plum;
@@ -24,7 +29,7 @@ header {
 .container {
     display: flex;
     width: 50%;
-    margin-left: 20%;
+    margin: 50px auto;
     text-align: center;
 }
 
