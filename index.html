@@ -7,9 +7,9 @@
     <title>Quiz</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="hs">
-            <a href="">view high scores</a>
+            <a class="view">view high scores</a>
         </div>
         <div class="time">
             <div>Time: </div><div class="timer">0</div>
@@ -22,7 +22,7 @@
                 <h1 class="question">Coding Quiz Challenge</h1>
             </div>
             <div class="description">
-                Try to answer the following code related questions within the time limit. keep in mind that incorrect answers will penalize your score/time by 10 seconds.
+                Try to answer the following questions within the time limit. keep in mind that incorrect answers will penalize your score/time by 10 seconds.
             </div>
             <button class="start-btn btn">
                 Start Quiz
@@ -34,13 +34,24 @@
         </div>
         <div id="end" class=" end hide">
                 <h2>all done!</h2>
-                <p>your final score is <span id="score"></span>. <br>
+                <p>your final score is <span id="score"></span>. <br><br>
                 enter initials here: <input type="text" id="initials" max="3"/>
                 <button id="submit" class="btn">Submit</button></p>
         </div>
         
     </div>
+
+    <div id="highscores" class="highscores hide">
+        <h1>Highscore</h1>
+        <ol class="ol"></ol>
+        <div class="btns">
+            <button class="back-btn btn">Go back</button>
+            <button class="clear-btn btn">Clear highscore</button>
+        </div>
+    </div>
+        
     <div id="correct" class="correct hide"></div>
+
     <script src="assets/js/script.js"></script>
 </body>
 </html>
